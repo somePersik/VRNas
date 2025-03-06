@@ -1,0 +1,27 @@
+@import './_spoiler.scss';
+
+.why-us {
+    font-size:1rem;
+    max-width:34.25em;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__tag {
+        margin: 0 0 0.75em 0;
+    }
+
+    &__title {
+        margin: 0 0 0.16em 0;
+    }
+
+    &__spoilers {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:1.5em;
+    }
+}

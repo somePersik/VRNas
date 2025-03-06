@@ -1,0 +1,220 @@
+.advantages {
+    font-size:1rem;
+    width:100%;
+
+    ._container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap:2.5em;
+    }
+
+    &__header {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__tag {
+        margin: 0 0 0.75em 0;
+    }
+
+    &__title {
+        margin: 0 0 0.33em 0;
+    }
+
+    &__offer {
+        max-width:39em;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 175%;
+        color: $gray-bright;
+    }
+
+    &__pricing {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap:2.5em;
+        background: rgba(37, 37, 50, 0.8);
+        position:relative;
+        border:1px solid transparent;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent) 1;
+
+        @media (max-width:930px) {
+            flex-direction: column;
+        }
+    }
+
+    &__padding-wrapper {
+        padding:3.43em 0;
+
+        @media (max-width:930px) {
+            padding: 0 1.375em;
+        }
+    }
+
+    &__list {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:2em;
+        padding: 0 7.375em 0 2.625em;
+        border-right:1px solid rgba(255, 255, 255, 0.1);
+        @media (max-width:930px) {
+            border-right:none;
+            border-bottom:1px solid rgba(255, 255, 255, 0.1);
+            padding: 2em 0 3em;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:1em;
+
+        @media (max-width:400px) {
+            flex-direction: column;
+        }
+    }
+
+    &__marker {
+        width:2.625em;
+        position:relative;
+        flex: 0 0 auto;
+        background: $background;
+        border-radius: 100%;
+        overflow:hidden;
+
+        &:after {
+            content:'';
+            width:100%;
+            height:0;
+            padding-top:100%;
+        }
+    }
+
+    &__border {
+        width:100%;
+        position:absolute;
+        left:0; top:0;
+    }
+
+    &__icon {
+        width:45.2%;
+        position:absolute;
+        left:50%; top:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    &__text-info {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:0.75em;
+    }
+
+    &__item-titile {
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: $white;
+    }
+
+    &__item-offer {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 175%;
+        color: $gray-dark;
+    }
+
+    &__group {
+        width: 22.5em;
+        flex:0 0 auto;
+        position:relative;
+
+        @media (max-width:550px) {
+            width: 16em;
+        }
+        @media (max-width:425px) {
+            position:static;
+        }
+    }
+
+    &__object {
+        width:100%;
+        position:relative;
+        z-index: 0;
+    }
+
+    &__special-offer {
+        position:absolute;
+        left:0; bottom:0;
+        transform: translate(-41.4%, 21.6%);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0.875em;
+        background:$article;
+        border:1px solid transparent;
+        border-image: linear-gradient(90deg, $blue, $purple) 1;
+        padding:1.25em 4.375em 1.125em;
+        white-space: nowrap;
+
+        @media (max-width:550px) {
+            transform: translate(-39.5%, 39.6%);
+        }
+        @media (max-width:425px) {
+            left:50%;
+            transform: translate(-50%, 50%);
+            max-width:100%;
+        }
+    }
+
+    &__promise {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 143%;
+        color: $gray-bright;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 3.75rem;
+        line-height: 110%;
+        color: $white;
+    }
+
+    &__price-number {
+    }
+
+    &__link {
+    }
+
+    &__guarantee {
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 167%;
+        text-align: center;
+        color: $gray-dark;
+    }
+
+    &__light {
+        width:51.625em;
+        position:absolute;
+        bottom:12.9%; right:0;
+        transform:translate(6.2%, 0);
+        filter:blur(6.25em);
+        z-index:-1;
+    }
+}
