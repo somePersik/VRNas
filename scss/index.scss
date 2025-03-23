@@ -384,7 +384,7 @@
     }
 }
 
-@import './components/_services.scss';
+@import './sections/_services.scss';
 .services {
     margin: 0 0 9.375rem 0;
 
@@ -485,12 +485,12 @@
     }
 }
 
-@import './components/_video-presentation.scss';
+@import './sections/_video-presentation.scss';
 .video-presentation {
     margin: 0 0 6.25rem 0;
 }
 
-@import './components/_comments-presentation.scss';
+@import './sections/_comments-presentation.scss';
 .comments-presentation {
     margin: 0 0 6.25rem 0;
 
@@ -499,12 +499,12 @@
     }
 }
 
-@import './components/_advantages.scss';
+@import './sections/_advantages.scss';
 .advantages {
     margin: 0 0 12.5rem 0;
 }
 
-@import './components/_partners.scss';
+@import './sections/_partners.scss';
 .partners {
     margin: 0 0 9.375rem 0;
 
@@ -514,6 +514,7 @@
 }
 
 @import './components/_slider.scss';
+@import './ui/_border-button.scss';
 .articles {
     width:100%;
     position:relative;
@@ -565,38 +566,6 @@
     }
 
     &__link-all {
-        font-weight: 700;
-        font-size: 0.875rem;
-        line-height: 100%;
-        letter-spacing: 0.11em;
-        text-transform: uppercase;
-        text-align: center;
-        color: $white;
-        white-space:nowrap;
-        position:relative;
-        z-index: 0;
-
-        padding: 1.125rem 2.375rem;
-        background: rgba(255, 255, 255, 0.06);
-        border:1px solid transparent;
-        border-image: linear-gradient(90deg, $blue, $purple) 1;
-
-        &:after {
-            content:'';
-            position:absolute;
-            left:0; top:0;
-            width:100%;
-            height:100%;
-            background: linear-gradient(90deg, $blue, $purple);
-            transition:0.3s;
-            opacity: 0;
-            z-index:-1;
-        }
-
-        &:hover:after {
-            opacity:1;
-        }
-
         @media (max-width:640px) {
             align-self: flex-end;
         }

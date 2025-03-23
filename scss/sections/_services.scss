@@ -1,4 +1,8 @@
-@import './_service.scss';
+@import '../components/_service.scss';
+
+@import '../ui/_tag.scss';
+@import '../ui/_title.scss';
+@import '../ui/grad-button';
 
 .services {
     $pr: &;

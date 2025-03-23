@@ -1,4 +1,7 @@
-@import './_video-player.scss';
+@import '../components/_video-player.scss';
+
+@import '../ui/_tag.scss';
+@import '../ui/_title.scss';
 
 .video-presentation {
     font-size:1rem;

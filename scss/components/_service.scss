@@ -9,11 +9,12 @@
     gap:3.75em;
     background-color: $article;
     border:1px solid transparent;
-    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent) 1;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) 1;
     padding:2.375em 3.5em 1.56em 2em;
     position:relative;
     overflow: hidden;
     cursor:pointer;
+    transition:0.3s;
 
     &__icon {
         width:3em;

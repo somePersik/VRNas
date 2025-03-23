@@ -1,0 +1,86 @@
+@import '../ui/_tag.scss';
+@import '../ui/_title.scss';
+@import '../ui/_border-button.scss';
+
+.faq {
+    font-size:1rem;
+    width:100%;
+
+    ._container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2em;
+    }
+
+    &__header {
+        max-width: 49.375em;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__tag {
+        margin: 0 0 0.75em 0;
+    }
+
+    &__title {
+        margin: 0 0 0.5em 0;
+    }
+
+    &__offer {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 175%;
+        color: $gray-bright;
+    }
+
+    &__filters {
+        max-width: 49.375em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:1.5em;
+    }
+
+    &__filter {
+        background:none;
+    }
+
+    &__questions {
+        max-width: 49.375em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1.5em;
+    }
+
+    &__spoiler {
+        border:1px solid transparent;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.025)) 1;
+        padding: 0 1.2em;
+        background-color: $article;
+
+        &._open {
+            border-image: linear-gradient(90deg, $blue, $purple) 1;
+
+            .spoiler__title {
+                padding: 1.2em 0 0.6em;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+            }
+        
+            .spoiler__body {
+                padding: 0.75em 0 2em;
+            }
+        }
+    }
+
+    .spoiler__title {
+        padding:1.2em 0;
+        border:none;
+    }
+}

@@ -1,0 +1,31 @@
+.way {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.625em;
+
+    &__item {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 175%;
+        color: $white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:0.625em;
+
+        &:not(:last-child):after {
+            content:'';
+            width:0.5em;
+            height:0.5em;
+            border-top:2px solid $white;
+            border-right:2px solid $white;
+            transform:rotate(45deg);
+        }
+
+        &._curent {
+            font-weight: 300;
+            color: $gray-bright;
+        }
+    }
+}

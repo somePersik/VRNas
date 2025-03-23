@@ -1,0 +1,125 @@
+@import './common/_index.scss';
+@import './components/_header.scss';
+
+@import './ui/_tag.scss';
+@import './ui/_title.scss';
+@import './ui/_grad-button.scss';
+
+@import './sections/_catalog-info.scss';
+.catalog-info {
+    margin: 0 0 9.375rem 0;
+
+    @media (max-width:460px) {
+        margin: 0 0 6.25rem 0;
+    }
+}
+
+@import './sections/_services.scss';
+.services {
+    margin: 0 0 9.375rem 0;
+
+    @media (max-width:460px) {
+        margin: 0 0 6.25rem 0;
+    }
+}
+
+.achievements {
+    width:100%;
+    margin: 0 0 9.375rem 0;
+
+    @media (max-width:460px) {
+        margin: 0 0 6.25rem 0;
+    }
+
+    ._container {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        position:relative;
+    }
+
+    &__light {
+        width:60%;
+        height:0.75rem;
+        position:absolute;
+        background-color: #a3c8ff;
+        border-radius: 100%;
+        z-index: -1;
+        filter:blur(2.25rem);
+
+        @media (max-width:460px) {
+            height:2rem;
+            filter:blur(3rem);
+        }
+    }
+
+    &__wrapper {
+        max-width: 57rem;
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        gap:2.25rem;
+        flex-wrap: wrap;
+
+        @media (max-width:630px) {
+            justify-content: center;
+        }
+        @media (max-width:460px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0.75rem;
+    }
+
+    &__parameter {
+
+    }
+
+    &__value {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 121%;
+        letter-spacing: -0.01em;
+        color: $white;
+
+        @media (max-width:460px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+@import './sections/_advantages.scss';
+.advantages {
+    margin: 0 0 12.5rem 0;
+
+    ._container {
+        position:relative;
+    }
+
+    &__angle-light {
+        position:absolute;
+        left:0; top:2.375rem;
+        transform:translate(-30%, 0);
+        z-index: -1;
+        filter:blur(4.5rem);
+    }
+}
+
+
+@import './sections/_comments-presentation.scss';
+.comments-presentation {
+    margin: 0 0 9.375rem 0;
+
+    @media (max-width:460px) {
+        margin: 0 0 6.25rem 0;
+    }
+}
+
+@import './components/_footer.scss';

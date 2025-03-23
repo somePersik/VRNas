@@ -1,0 +1,119 @@
+.member {
+    font-size:1rem;
+    min-width: 14em;
+    border:1px solid transparent;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) 1;
+    padding:0.56em;
+    cursor:pointer;
+    transition:0.3s;
+
+    &:hover {
+        border-image: linear-gradient(90deg, $blue, $purple) 1;
+    }
+
+    &__content-zone {
+        width:100%;
+        position:relative;
+        overflow:hidden;
+
+        &:after {
+            content:'';
+            width:100%;
+            height:0;
+            padding-top:135%;
+        }
+    }
+
+    &__photo {
+        position:absolute;
+        left:0; top:0;
+        width:100%;
+        height:100%;
+
+        & > img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+
+    &__cover {
+        position:absolute;
+        left:0; top:0;
+        width:100%;
+        height:100%;
+        background: linear-gradient(180deg, rgba(50, 70, 188, 0), #192883);
+    }
+
+    &__info {
+        position:absolute;
+        left: 50%; bottom:3%;
+        transform: translate(-50%, 0);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1em;
+    }
+
+    &__social-links {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:1.5em;
+        transform: translate(0, -50%);
+        opacity:0;
+        visibility: hidden;
+        transition:0.3s;
+    }
+
+    &:hover &__social-links {
+        transform: translate(0, 0);
+        opacity:1;
+        visibility: visible;
+    }
+
+    &__link {
+        width:2.875em;
+        position:relative;
+
+        &:after {
+            content:'';
+            width:100%;
+            height:0;
+            padding-top:100%;
+        }
+    }
+
+    &__link-border {
+        position:absolute;
+        left:0; top:0;
+    }
+
+    &__link-icon {
+        position:absolute;
+        left:50%; top:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    &__text-info {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: $white;
+        line-height: 175%;
+    }
+
+    &__speciality {
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: $gray-dark;
+        line-height: 167%;
+    }
+}
